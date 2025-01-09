@@ -1,0 +1,11 @@
+# dart run package_rename
+package_rename_config:
+  android:
+    app_name: Exachanger
+    ackage_name: com.exachanger.app
+    override_old_package: com.exachanger.exachanger
+
+  ios:
+    app_name: Exachanger
+    package_name: com.exachanger.app
+    override_old_package: com.exachanger.exachanger
