@@ -1,3 +1,5 @@
+import 'package:exachanger/features/dashboard/presentation/news_detail.dart';
+import 'package:exachanger/features/exchange/presentation/exchange.dart';
 import 'package:exachanger/features/home/home_screen.dart';
 import 'package:exachanger/features/sign_in/sign_in_screen.dart';
 import 'package:exachanger/features/sign_up/sign_up_screen.dart';
@@ -16,6 +18,8 @@ enum Routes {
   signIn,
   signUp,
   home,
+  exchange,
+  newsDetail,
 }
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
@@ -59,6 +63,20 @@ GoRouter goRouter(Ref ref) {
         path: '/sign-up',
         name: Routes.signUp.name,
         builder: (context, state) => SignUpScreen(
+          key: state.pageKey,
+        ),
+      ),
+      GoRoute(
+        path: '/exchange',
+        name: Routes.exchange.name,
+        builder: (context, state) => Exchange(
+          key: state.pageKey,
+        ),
+      ),
+      GoRoute(
+        path: '/news-detail',
+        name: Routes.newsDetail.name,
+        builder: (context, state) => NewsDetaill(
           key: state.pageKey,
         ),
       ),

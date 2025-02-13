@@ -28,6 +28,8 @@ class CustomButton extends StatelessWidget {
             horizontal: 24,
           ),
         ),
+        // elevation: WidgetStateProperty.all(0),
+        elevation: WidgetStateProperty.all(1),
         shape: WidgetStateProperty.all(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),

@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -8,14 +8,14 @@ class AppTextStyles {
 
   //Headings
   static TextStyle titleLarge = TextStyle(
-    fontSize: 20.sp,
+    fontSize: 24.sp,
     fontWeight: FontWeight.w700,
     fontFamily: manropeFontFamily,
     letterSpacing: 0.4,
   );
 
   static TextStyle titleMedium = TextStyle(
-    fontSize: 16.sp,
+    fontSize: 20.sp,
     fontWeight: FontWeight.w900,
     fontFamily: manropeFontFamily,
     letterSpacing: 0.32,
@@ -30,7 +30,7 @@ class AppTextStyles {
 
   //Body
   static TextStyle bodyLarge = TextStyle(
-    fontSize: 16,
+    fontSize: 16.sp,
     fontWeight: FontWeight.w900,
     fontFamily: manropeFontFamily,
     letterSpacing: 0.02,
@@ -44,7 +44,7 @@ class AppTextStyles {
   );
 
   static TextStyle bodySmall = TextStyle(
-    fontSize: 14.sp,
+    fontSize: 12.sp,
     fontWeight: FontWeight.w400,
     fontFamily: manropeFontFamily,
     letterSpacing: 0.24,

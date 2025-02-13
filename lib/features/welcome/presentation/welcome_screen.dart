@@ -1,5 +1,7 @@
+import 'package:exachanger/routes/app_router.dart';
 import 'package:exachanger/shared/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../app/app_values.dart';
 
@@ -72,11 +74,18 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     ),
                   ),
                   Spacer(),
-                  CustomButton(label: "Sign in", onPressed: () {}),
+                  CustomButton(
+                    label: "Sign in",
+                    onPressed: () {
+                      context.pushNamed(Routes.signIn.name);
+                    },
+                  ),
                   SizedBox(height: AppDimens.p12),
                   CustomButton(
                     label: "Sign Up",
-                    onPressed: () {},
+                    onPressed: () {
+                      context.pushNamed(Routes.signUp.name);
+                    },
                     isReverseButton: true,
                   ),
                 ],

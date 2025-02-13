@@ -6,6 +6,31 @@ import 'package:flutter/material.dart';
 class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
+      inputDecorationTheme: InputDecorationTheme(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+        ),
+        focusColor: AppColors.primaryLight,
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          borderSide: BorderSide(color: AppColors.primaryLight),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          borderSide: BorderSide(color: Colors.grey),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          borderSide: BorderSide(color: AppColors.error),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          borderSide: BorderSide(color: AppColors.error),
+        ),
+        // text
+        hintStyle: AppTextStyles.bodySmall,
+        labelStyle: AppTextStyles.bodySmall,
+      ),
       brightness: Brightness.light,
       primaryColor: AppColors.primaryLight,
       colorScheme: const ColorScheme.light(
@@ -20,7 +45,8 @@ class AppTheme {
       appBarTheme: AppBarTheme(
         elevation: 0,
         backgroundColor: AppColors.white,
-        titleTextStyle: AppTextStyles.titleMedium,
+        titleTextStyle: AppTextStyles.titleMedium.copyWith(color: Colors.black),
+        surfaceTintColor: Colors.white,
       ),
       bottomSheetTheme: const BottomSheetThemeData(
         backgroundColor: Colors.white,

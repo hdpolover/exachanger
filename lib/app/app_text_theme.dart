@@ -7,18 +7,12 @@ class AppTextTheme {
   //Simple text theme
   static TextTheme get lightTextTheme {
     return TextTheme(
-      titleLarge:
-          AppTextStyles.titleLarge.copyWith(color: AppColors.primaryLight),
-      titleMedium:
-          AppTextStyles.titleMedium.copyWith(color: AppColors.primaryLight),
-      titleSmall:
-          AppTextStyles.titleSmall.copyWith(color: AppColors.primaryLight),
-      bodyLarge:
-          AppTextStyles.bodyLarge.copyWith(color: AppColors.secondaryLight),
-      bodyMedium:
-          AppTextStyles.bodyMedium.copyWith(color: AppColors.primaryLight),
-      bodySmall:
-          AppTextStyles.bodySmall.copyWith(color: AppColors.secondaryLight),
+      titleLarge: AppTextStyles.titleLarge,
+      titleMedium: AppTextStyles.titleMedium,
+      titleSmall: AppTextStyles.titleSmall,
+      bodyLarge: AppTextStyles.bodyLarge,
+      bodyMedium: AppTextStyles.bodyMedium,
+      bodySmall: AppTextStyles.bodySmall,
     );
   }
 
